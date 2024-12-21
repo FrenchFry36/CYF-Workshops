@@ -12,6 +12,10 @@
 @import url(../docs/copy/styles.css);
 
 .card {
-  height: 300px;
+}
 
+.card img {
+}
+h1 {
+  text-align: top;
 }
