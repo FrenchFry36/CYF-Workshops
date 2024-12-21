@@ -10,10 +10,29 @@
     <script src="assets/app.js" defer></script>
   </head>
   <body>
-    <a class="is-invisible" href="#main">Skip to main</a>
-    <!--=======================
+    <header class="header">
+      <a class="Skip" href="#main">Skip to main</a>
+      <!--=======================
      THE HEADER COMPONENT GOES HERE
     =======================-->
+      <button id="toggle" class="header__action">
+        <span class="is-invisible">Toggle Menu.</span>
+        <svg
+          class="header__dots"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentcolor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm0 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"
+          />
+        </svg>
+      </button>
+    </header>
     <nav class="menu" id="menu" hidden>
       <ul>
         <li>
@@ -33,6 +52,7 @@
         </li>
       </ul>
     </nav>
+
     <main tabindex="0" id="main" class="main">
       <section class="main__deck">
         <!--=======================
