@@ -10,3 +10,8 @@
 @import url(../docs/footer/styles.css);
 @import url(../docs/card/styles.css);
 @import url(../docs/copy/styles.css);
+
+.card {
+  height: 300px;
+
+}
