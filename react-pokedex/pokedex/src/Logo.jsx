@@ -1,6 +1,10 @@
 import { PropTypes } from "prop-types";
 
 function Logo(props) {
+  function logWhenClicked() {
+    console.log("it doesn't matter what the message is");
+  }
+
   console.log(props);
   return (
     <header>
@@ -8,6 +12,7 @@ function Logo(props) {
       <img
         src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
         alt=""
+        onClick={logWhenClicked}
       />
     </header>
   );
